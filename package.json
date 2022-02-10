@@ -29,13 +29,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexidr9116/live-ecommerce.git"
+    "url": "git+https://github.com/alexidr9116/walleyworks.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alexidr9116/live-ecommerce.git/issues"
+    "url": "https://github.com/alexidr9116/walleyworks.git/issues"
   },
-  "homepage": "https://github.com/alexidr9116/live-ecommerce.git#readme"
+  "homepage": "https://github.com/alexidr9116/walleyworks.git#readme"
 }
