@@ -28,7 +28,6 @@ const UserSchema = new Schema({
   },
   birthday:{
     type:Date,
-    
   },
   gender:{
     type:Number,
@@ -47,22 +46,47 @@ const UserSchema = new Schema({
   state:{
     type:String,
   },
-  zip:{
+  zipCode:{
     type:String,
   },
   status:{
     type:Number,
+    default:0,
   },
   about:{
     type:String,
   },
-  
+  address:{
+    type:String,
+  },
+  city:{
+    type:String,
+  },
   phoneNumber1:{
     type:String,
   },
-  phoneNumber:{
+  phoneNumber2:{
     type:String,
-  }
+  },
+  socialLink:{
+    type:Object,
+    facebookLink:{
+      type:String,
+      default:""
+    },
+    twitterLink:{
+      type:String,
+      default:""
+    },
+    instagramLink:{
+      type:String,
+      default:""
+    },
+    linkedinLink:{
+      type:String,
+      default:""
+    }
 
+  }
 });
 module.exports = User = mongoose.model("user", UserSchema);

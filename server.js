@@ -10,8 +10,8 @@ require("dotenv").config();
 
 const auth = require("./routes/api/auth");
 const channel = require("./routes/api/channel");
-
-
+const account = require("./routes/api/account");
+const product = require("./routes/api/product");
 
 const app = express();
 // Bodyparser middleware
@@ -31,7 +31,7 @@ const option = {
   family:4,
   //ssl:true,
 }
-/*
+
 mongoose
   .connect(
     DATABASE_CONNECTION,
@@ -39,7 +39,7 @@ mongoose
   )
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
-*/
+
 const assetFolder  = path.resolve(__dirname, './client/build/');
 
 // Passport middleware
@@ -49,8 +49,8 @@ require("./config/passport")(passport);
 // Routes
 app.use("/api/auth", auth);
 app.use("/api/channel",channel);
-
-
+app.use("/api/account",account);
+app.use("/api/product",product)
 
 app.use(express.static(assetFolder));
 
